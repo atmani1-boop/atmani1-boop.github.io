@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemple 02 — Catalogue produits | D-SLS</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav class="nav"><div class="nav-in">
+  <div class="logo"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.8 2.8M16.2 16.2 19 19M19 5l-2.8 2.8M7.8 16.2 5 19"/></svg></span>D-<b>SLS</b></div>
+  <div class="nav-links">
+    <a href="exemple-01-accueil.html">Accueil</a>
+    <a class="active" href="exemple-02-produits.html">Produits</a>
+    <a href="exemple-10-contact.html">Contact</a>
+  </div>
+</div></nav>
+
+<div class="wrap">
+  <a class="back" href="../index.html">← Tous les exemples</a>
+  <div class="ex-head"><span class="no">02</span><span class="chip dim">Catalogue produits</span></div>
+
+  <div class="hero" style="padding:20px 0 10px">
+    <h1>Collection 2026 — <em>une plateforme, quinze expressions</em></h1>
+    <p class="lead">De l'éclairage routier aux lanternes patrimoniales ciselées main : la même électronique, le même contrôle, les mêmes standards.</p>
+  </div>
+
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 22px" role="group" aria-label="Filtrer par gamme">
+    <button class="pill-btn on" data-f="all">Tous</button>
+    <button class="pill-btn" data-f="route">Route</button>
+    <button class="pill-btn" data-f="solaire">Solaire</button>
+    <button class="pill-btn" data-f="patrimoine">Patrimoine</button>
+  </div>
+
+  <div class="grid g3" id="prod">
+    <a class="card hl" data-cat="route" href="exemple-03-fiche-produit.html">
+      <span class="card-img prod"><img src="https://kimi-web-img.kimi.ai/img/www.agcled.com/e146cfb54d0a98be6cbcf32217d1d201ed86a498.webp" alt="Luminaire routier LOTUS D-SLS-14"></span>
+      <span class="chip">Flagship</span>
+      <h3 style="margin-top:12px">LOTUS · D-SLS-14</h3>
+      <p>Luminaire routier de référence. Réflecteur indirect « dark-light », ULOR 0 %.</p>
+      <p style="margin-top:10px;color:var(--orange);font-family:var(--mono);font-size:.8rem">20–250 W · 46 750 lm · 187 lm/W</p>
+    </a>
+    <div class="card" data-cat="solaire">
+      <span class="card-img prod"><img src="https://kimi-web-img.kimi.ai/img/www.agcled.com/ed745cbab7c41885edc83029966a1e762d3a0a76.jpg" alt="Candélabre solaire SOLARIS D-SLS-28 S"></span>
+      <span class="chip g">Hors réseau</span>
+      <h3 style="margin-top:12px">SOLARIS · D-SLS-28 S</h3>
+      <p>Candélabre solaire : captage sur toute la hauteur du fût, batterie gérée par IA.</p>
+      <p style="margin-top:10px;color:var(--orange);font-family:var(--mono);font-size:.8rem">Sans tranchée · sans facture</p>
+    </div>
+    <div class="card" data-cat="route">
+      <span class="card-img prod"><img src="https://kimi-web-img.kimi.ai/img/www.agcled.com/b3fadb7bff88897a9b28f22f7648715ac61e48c5.jpg" alt="Luminaire urbain CITY D-SLS-06"></span>
+      <span class="chip dim">Urbain</span>
+      <h3 style="margin-top:12px">CITY · D-SLS-06</h3>
+      <p>Éclairage urbain compact pour rues résidentielles et parkings.</p>
+      <p style="margin-top:10px;color:var(--orange);font-family:var(--mono);font-size:.8rem">20–80 W · DALI-2 · NFC</p>
+    </div>
+    <div class="card" data-cat="patrimoine">
+      <span class="card-img"><img src="https://kimi-web-img.kimi.ai/img/www.agcled.com/0d68d319e3d734ad7f89b6eb7daad168064a3b5b.webp" alt="Lanterne patrimoniale HERITAGE D-SLS-31 de nuit"></span>
+      <span class="chip dim">Patrimoine</span>
+      <h3 style="margin-top:12px">HERITAGE · D-SLS-31</h3>
+      <p>Lanterne ciselée main pour centres historiques et sites classés.</p>
+      <p style="margin-top:10px;color:var(--orange);font-family:var(--mono);font-size:.8rem">2200–3000 K · IP66</p>
+    </div>
+    <div class="card" data-cat="route">
+      <span class="card-img"><img src="https://kimi-web-img.kimi.ai/img/pebinternational.com/bae0c292fcca13847adb5c1e8b7eac13cf6f4d78.jpeg" alt="Luminaires grande hauteur ATLAS D-SLS-22 dans un entrepôt"></span>
+      <span class="chip dim">Grandes voies</span>
+      <h3 style="margin-top:12px">ATLAS · D-SLS-22</h3>
+      <p>Grandes voies et autoroutes : flux élevé, maintenance rapide.</p>
+      <p style="margin-top:10px;color:var(--orange);font-family:var(--mono);font-size:.8rem">120–250 W · SPD 10 kV</p>
+    </div>
+    <div class="card" data-cat="solaire">
+      <span class="card-img prod"><img src="https://kimi-web-img.kimi.ai/img/venalsol.com/0e3d601ae269d1b4273b8ee6850529fd6165b208.jpg" alt="Luminaire hybride TWIN D-SLS-35"></span>
+      <span class="chip g">Hybride</span>
+      <h3 style="margin-top:12px">TWIN · D-SLS-35</h3>
+      <p>Solaire + réseau : continuité de service garantie toute l'année.</p>
+      <p style="margin-top:10px;color:var(--orange);font-family:var(--mono);font-size:.8rem">MPPT · LiFePO4 · TALQ</p>
+    </div>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll("[data-f]").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll("[data-f]").forEach(function(x){x.classList.remove("on")});
+    b.classList.add("on");
+    var f = b.getAttribute("data-f");
+    document.querySelectorAll("#prod [data-cat]").forEach(function(c){
+      c.style.display = (f==="all" || c.getAttribute("data-cat")===f) ? "" : "none";
+    });
+  });
+});
+</script>
+
+<footer><div class="foot-in">
+  <span>D-SLS SRL · Catalogue 2026</span>
+  <a href="exemple-03-fiche-produit.html">Exemple suivant : fiche LOTUS →</a>
+</div></footer>
+<script src="../assets/main.js"></script>
+</body>
+</html>
